@@ -1,0 +1,15 @@
+function findUniq(arr) {
+  // do magic
+  uniqueNumber = [];
+  // sort array numerically ascending
+  var sortedArr = arr.sort();
+  // return the first non replicated value from the sorted array that has been pushed
+  // to the empty array
+  for ( var i=0;i< sortedArr.length;i++){  
+    if (sortedArr[i] !== sortedArr[i+1] && sortedArr[i] !== sortedArr[i-1])
+    {
+      uniqueNumber.push(sortedArr[i]);
+    }
+  } 
+   return uniqueNumber[0];
+}
