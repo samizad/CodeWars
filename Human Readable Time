@@ -1,0 +1,9 @@
+function humanReadable(seconds) {
+  // TODO
+  var hours = seconds / 3600, minutes =seconds /60 % 60, newsecond = seconds %60 ;
+  return formatDate(hours) +':'+ formatDate( minutes)+':'+ formatDate (newsecond)
+}
+function formatDate(n){
+var Number = parseInt(n, 10);
+return Number > 9? Number :'0'+Number;
+}
